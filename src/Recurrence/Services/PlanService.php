@@ -2,14 +2,14 @@
 
 namespace Pagarme\Core\Recurrence\Services;
 
-use PagarmeCoreApiLib\Models\GetPlanItemResponse;
-use PagarmeCoreApiLib\PagarmeCoreApiClient;
+use MundiAPILib\Models\GetPlanItemResponse;
+use MundiAPILib\PagarmeCoreApiClient;
 use Pagarme\Core\Kernel\Services\LogService;
 use Pagarme\Core\Kernel\ValueObjects\AbstractValidString;
 use Pagarme\Core\Recurrence\Aggregates\Plan;
 use Pagarme\Core\Recurrence\Factories\PlanFactory;
 use Pagarme\Core\Recurrence\Repositories\PlanRepository;
-use PagarmeCoreApiLib\Models\CreatePlanRequest;
+use MundiAPILib\Models\CreatePlanRequest;
 use Pagarme\Core\Recurrence\ValueObjects\PlanId;
 use Pagarme\Core\Recurrence\ValueObjects\PlanItemId;
 use Pagarme\Core\Kernel\Abstractions\AbstractModuleCoreSetup;
@@ -29,7 +29,7 @@ class PlanService
 
         $password = '';
 
-        \PagarmeCoreApiLib\Configuration::$basicAuthPassword = '';
+        \MundiAPILib\Configuration::$basicAuthPassword = '';
 
         $this->pagarmeCoreApi = new PagarmeCoreApiClient($secretKey, $password);
     }

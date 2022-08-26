@@ -2,7 +2,7 @@
 
 namespace Pagarme\Core\Recurrence\Factories;
 
-use PagarmeCoreApiLib\Models\ListInvoicesResponse;
+use MundiAPILib\Models\ListInvoicesResponse;
 use Pagarme\Core\Kernel\Abstractions\AbstractEntity;
 use Pagarme\Core\Recurrence\Aggregates\Charge;
 use Pagarme\Core\Kernel\Interfaces\FactoryInterface;
