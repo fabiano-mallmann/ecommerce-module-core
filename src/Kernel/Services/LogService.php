@@ -115,7 +115,6 @@ class LogService
             }
             if (isset($data['data']['payments'][0]['credit_card']['card']['billing_address'])) {
                 $data['data']['payments'][0]['credit_card']['card']['billing_address'] = null;
-
             }
         }
         return $data;
